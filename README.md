@@ -21,4 +21,16 @@
 *sudo systemctl enable zabbix-server zabbix-agent apache2  
 
 ### Задание 2
+Установите Zabbix Agent на два хоста.
 
+#### Приложите в файл README.md скриншот раздела Configuration > Hosts, где видно, что агенты подключены к серверу
+![alt text](https://github.com/AntonKurapov66/zabbix-hw/blob/main/img/2.PNG)
+#### Приложите в файл README.md скриншот лога zabbix agent, где видно, что он работает с сервером
+![alt text](https://github.com/AntonKurapov66/zabbix-hw/blob/main/img/3.PNG)
+#### Приложите в файл README.md скриншот раздела Monitoring > Latest data для обоих хостов, где видны поступающие от агентов данные.
+Выбрал одну метрику,чтобы было нагляднее видно что метрика собирается с обоих хостов.
+![alt text](https://github.com/AntonKurapov66/zabbix-hw/blob/main/img/4.PNG)
+#### Приложите в файл README.md текст использованных команд в GitHub
+*в web zabbix server настроил два хоста :
+ *51.250.79.84 - zabbix-server and zabbix-agent
+ *158.160.60.103 -zabbix-agent2
