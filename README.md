@@ -44,7 +44,7 @@
 * настроил конфиг на zabbix-server
   * sudo nano /etc/zabbix/zabbix_agentd.conf (добавил в Server хосты 51.250.79.84,158.160.60.103)  
 * настроил конфиг на zabbix-agent2
-  * sudo nano /etc/zabbix/zabbix_agentd.conf (добавил в Server хосты 51.250.79.84 и ListenPort=10050)  
+  * sudo nano /etc/zabbix/zabbix_agentd.conf (добавил в Server хосты 51.250.79.84 и ListenPort=10050(иначе zabbix-server ругался что не может забрать метрики при этом пинг до хоста проходил))    
 * перезапустил агенты на обоих хостах  
   * sudo systemctl restart zabbix-server zabbix-agent apache2  
   * sudo systemctl restart zabbix-agent
