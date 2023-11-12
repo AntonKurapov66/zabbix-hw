@@ -31,6 +31,23 @@
 Выбрал одну метрику,чтобы было нагляднее видно что метрика собирается с обоих хостов.
 ![alt text](https://github.com/AntonKurapov66/zabbix-hw/blob/main/img/4.PNG)
 #### Приложите в файл README.md текст использованных команд в GitHub
+* на вторую машину поставил zabbix-agent  
+  * wget https://repo.zabbix.com/zabbix/6.0/debian/pool/main/z/zabbix-release/zabbix-release_6.0-4%2Bdebian11_all.deb   
+  * sudo dpkg -i zabbix-release_6.0-4+debian11_all.deb   
+  * sudo apt update  
+  * sudo apt install zabbix-agent -y  
+  * sudo systemctl restart zabbix-agent   
+  * sudo systemctl enable zabbix-agent  
 * в web zabbix server настроил два хоста :  
   * 51.250.79.84 - zabbix-server and zabbix-agent  
-  * 158.160.60.103 -zabbix-agent2  
+  * 158.160.60.103 - zabbix-agent2
+* настроил конфиг на zabbix-server
+  * sudo nano /etc/zabbix/zabbix_agentd.conf (добавил в Server хосты 51.250.79.84,158.160.60.103)  
+* настроил конфиг на zabbix-agent2
+  * sudo nano /etc/zabbix/zabbix_agentd.conf (добавил в Server хосты 51.250.79.84 и ListenPort=10050)  
+* перезапустил агенты на обоих хостах  
+  * sudo systemctl restart zabbix-server zabbix-agent apache2  
+  * sudo systemctl restart zabbix-agent
+
+
+
