@@ -1,12 +1,12 @@
 # Домашнее задание к занятию "Система мониторинга Zabbix" - `Курапов Антон`
 
 
-## Задание 1
+### Задание 1
 Установите Zabbix Server с веб-интерфейсом.
 
-### Прикрепите в файл README.md скриншот авторизации в админке.
+#### Прикрепите в файл README.md скриншот авторизации в админке.
 ![alt text](https://github.com/AntonKurapov66/zabbix-hw/blob/main/img/1.PNG)
-### Приложите в файл README.md текст использованных команд в GitHub.
+#### Приложите в файл README.md текст использованных команд в GitHub.
 *sudo apt install postgresq  
 *wget https://repo.zabbix.com/zabbix/6.4/ubuntu/pool/main/z/zabbix-release/zabbix-release_6.4-1+ubuntu22.04_all.deb  
 *dpkg -i zabbix-release_6.4-1+ubuntu22.04_all.deb  
@@ -21,3 +21,4 @@
 *sudo systemctl enable zabbix-server zabbix-agent apache2  
 
 ### Задание 2
+
