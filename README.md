@@ -32,5 +32,5 @@
 ![alt text](https://github.com/AntonKurapov66/zabbix-hw/blob/main/img/4.PNG)
 #### Приложите в файл README.md текст использованных команд в GitHub
 *в web zabbix server настроил два хоста :
- *51.250.79.84 - zabbix-server and zabbix-agent
- *158.160.60.103 -zabbix-agent2
+  *51.250.79.84 - zabbix-server and zabbix-agent
+  *158.160.60.103 -zabbix-agent2
